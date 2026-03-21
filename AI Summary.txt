@@ -1,0 +1,56 @@
+uwuhook - Advanced Trace Cleaner & Anti-Detection Utility
+
+uwuhook is a sophisticated Windows-based security evasion tool designed to remove forensic evidence and bypass detection systems. It's a professionally developed C++ application with a modern ImGui interface that provides comprehensive trace cleaning capabilities.
+
+Core Features:
+Authentication System:
+
+KeyAuth integration for license validation via keyauth.win API
+Dual server support (UK/Russia) for redundancy
+Local license storage with optional credential saving
+Multi-stage authentication process
+Comprehensive Trace Cleaning:
+
+Memory Cleaning: Scans and removes specific strings from process memory with DPS (Deeper Cleaning) mode
+Registry Cleaning: Targeted deletion of registry keys and values
+USN Journal Wiping: Removes NTFS file operation traces (requires admin privileges)
+BAM Traces: Clears Background Activity Moderator evidence
+File Deletion: Pattern-based file removal with environment variable support
+System Cache: Clears temporary files and system cache
+Network Cleanup: DNS cache and network settings reset
+Free Space Wiping: Secure deletion of data from unallocated disk space
+Advanced Security Bypasses:
+
+Embedded 33KB bypass executable for detection evasion
+9KB kernel driver for privileged system operations
+VMProtect integration for code virtualization and obfuscation
+XOR string encryption throughout the codebase
+Multi-layer protection system with anti-analysis checks
+Anti-Detection Protection:
+
+Anti-Attach: Prevents debugger attachment
+Anti-Debugger: Blocks debugging attempts
+Anti-Dump: Prevents memory dumping
+Anti-VM: Detects virtual machine environments
+Integrity Checks: Validates application integrity
+Kill Process: Terminates suspicious monitoring processes
+Driver Integration:
+
+Kernel-level driver (EpomakerKernel) for low-level operations
+Privilege escalation for admin-level trace removal
+Direct memory manipulation capabilities
+User Interface:
+
+Modern ImGui-based GUI with DirectX 11 rendering
+Multi-page interface (Registration → Panel Selection)
+Streamer mode (hides from screen capture/taskbar)
+Real-time progress indicators with human-like jitter
+Status tracking (Undetected/In Development/Discontinued)
+Custom animations and professional styling
+Module Management:
+
+Process and service cleaning
+Module enumeration and management
+Comprehensive multi-stage cleaning protocols
+Secure memory wiping with validation
+This tool appears designed for users who need to remove traces of their activities from Windows systems while evading detection by security software. It combines kernel-level access, sophisticated obfuscation, and comprehensive cleaning capabilities into a single professional-grade application.
